@@ -1,0 +1,3 @@
+[submodule "proto"]
+	path = proto
+	url = git@github.com:link-u/web_training_2024_proto.git
