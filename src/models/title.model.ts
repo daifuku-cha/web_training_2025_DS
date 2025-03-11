@@ -11,7 +11,9 @@ export interface TitleModel {
     thumbnail: ImageModel
     volume: VolumeModel
     relatedVolume: VolumeModel
-    badge: 'NONE' | 'NEW'
+    badge: BadgeStatus
     author: AuthorModel
     firstChapterId: number
 }
+
+export type BadgeStatus = 'NONE' | 'NEW'
