@@ -12,7 +12,7 @@ export const TopTranslator = {
                 ) ?? [],
             updateTitles:
                 proto.updateTitles?.map((title) =>
-                    TitleTranslator.transpile(title)
+                    TitleTranslator.translate(title)
                 ) ?? [],
         }
     },

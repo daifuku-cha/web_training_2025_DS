@@ -6,7 +6,7 @@ import { VolumeModel } from "@/models/volume.model";
 import { BadgeStatus } from "@/models/title.model";
 
 export const TitleTranslator = {
-    transpile: (proto: Proto.ITitle): TitleModel => {
+    translate: (proto: Proto.ITitle): TitleModel => {
         return {
             id: proto.id as number,
             name: proto.name as string,
