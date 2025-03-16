@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { TopSectionContainer } from './layouts/TopSectionContainer'
 import { Badge } from '@/components/Badge'
 import MyImage from '@/components/MyImage'
@@ -32,10 +33,7 @@ type UpdateTitleProps = {
 export const UpdateTitle: React.FC<UpdateTitleProps> = (props) => {
     return (
         <div className='relative flex h-[336px] flex-col gap-2'>
-            <MyImage
-                className='h-[145px] w-[232px]'
-                image={props.title.thumbnail}
-            />
+            <MyImage image={props.title.thumbnail} />
             <Badge />
             <div className='flex h-[83px] flex-col gap-[2px]'>
                 <p>{props.title.name}</p>
@@ -45,9 +43,14 @@ export const UpdateTitle: React.FC<UpdateTitleProps> = (props) => {
                 <button className='bg-[#F5B437] px-[10px] py-3 text-base font-semibold text-white'>
                     読む
                 </button>
-                <button className='bg-[#6FBAF0] px-[10px] py-3 text-base font-semibold text-white'>
-                    作品詳細
-                </button>
+                <Link
+                    href={`/title/${props.title.id}`}
+                    className='bg-[#6FBAF0] px-[10px] py-3 text-center'
+                >
+                    <button className=' text-base font-semibold text-white'>
+                        作品詳細
+                    </button>
+                </Link>
             </div>
         </div>
     )

@@ -105,3 +105,31 @@ export const JasracIcon: ImageModel = {
     width: 36,
     height: 36,
 }
+
+export const FacebookIcon: ImageModel = {
+    src: '/assets/facebook.png',
+    alt: 'Facebook',
+    width: 36,
+    height: 36,
+}
+
+export const TwitterIcon: ImageModel = {
+    src: '/assets/twitter.png',
+    alt: 'Twitter',
+    width: 36,
+    height: 36,
+}
+
+export const LineIcon: ImageModel = {
+    src: '/assets/line.png',
+    alt: 'Line',
+    width: 36,
+    height: 36,
+}
+
+export const PaperPlaneIcon: ImageModel = {
+    src: '/assets/paper-plane.png',
+    alt: 'Paper Plane',
+    width: 36,
+    height: 36,
+}
